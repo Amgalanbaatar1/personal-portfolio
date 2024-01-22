@@ -22,9 +22,9 @@ export function Hero() {
         </div>
 
         <div className="flex gap-1">
-          <img src="/images/git.png" alt="Giticon " />
+          <img src="/images/giticonp.png" alt="Giticon " />
           <img src="/images/twitter.png" alt="Twitter " />
-          <img src="/images/figma.png" alt="Figma " />
+          <img src="/images/figmas.png" alt="Figma " />
         </div>
       </div>
     </div>

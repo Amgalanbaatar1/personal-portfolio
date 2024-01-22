@@ -2,7 +2,9 @@ import { Header } from "../pages/Header";
 import { Chip } from "../components/Chip";
 import { About } from "../components/About";
 import { Hero } from "@/components/Hero";
-import { Skills } from "../components/Skills";
+
+import { Experience } from "@/components/Experience";
+import { Skillicon } from "@/components/Skill";
 export default function Home() {
   return (
     <div>
@@ -15,7 +17,8 @@ export default function Home() {
       <div className="flex justify-center ">
         <Chip label={"Skills"} />
       </div>
-      <Skills />
+      <Skillicon />
+      <Experience />
     </div>
   );
 }
