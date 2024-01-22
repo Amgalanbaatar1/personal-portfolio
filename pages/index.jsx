@@ -1,20 +1,21 @@
 import { Header } from "../pages/Header";
 import { Chip } from "../components/Chip";
-import { HeaderItems } from "../pages/Header";
-import { MainItems } from "./MainItems";
+import { About } from "../components/About";
+import { Hero } from "@/components/Hero";
+import { Skills } from "../components/Skills";
 export default function Home() {
   return (
     <div>
       <Header />
-      <HeaderItems />
+      <Hero />
       <div className="flex justify-center">
         <Chip label={"About Me"} />
       </div>
-
-      <MainItems />
-      <div className="flex justify-center mt-40">
+      <About />
+      <div className="flex justify-center ">
         <Chip label={"Skills"} />
       </div>
+      <Skills />
     </div>
   );
 }

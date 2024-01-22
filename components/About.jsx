@@ -1,7 +1,7 @@
-export function MainItems() {
+export function About() {
   return (
-    <div className="lg:flex">
-      <div className="  mt-10 px-20  py-24 lg:flex container mx-auto border   justify-center  gap-[280px]">
+    <div className="lg:flex ">
+      <div className=" max-xl:px-4 max-xl:py-8  xl:px-20 py-24 lg:flex container mx-auto border   justify-center  gap-[280px]  bg-gray-50">
         <div className="max-lg:  flex items-center justify-center  ">
           <img style={{ height: 480, width: 400 }} src="/images/Sagar.png" alt="Sagar" />
         </div>
