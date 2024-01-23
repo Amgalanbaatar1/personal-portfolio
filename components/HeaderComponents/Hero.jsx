@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <div className=" lg:flex container mx-auto border border-red-400   ">
+    <div className=" lg:flex container mx-auto   ">
       <div className=" my-10 order-2 flex items-center justify-center ">
         <img src="/images/profile.png" alt="profile" />
       </div>

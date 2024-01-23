@@ -1,11 +1,11 @@
 import { menuItems } from "@/components/Data/menuItems";
-import { Logo } from "../components/icons/Logo";
-import { Menu } from "../components/icons/Menu";
+import { Logo } from "../icons/Logo";
+import { Menu } from "../icons/Menu";
 import { Mainmenu } from "@/components/Data/Mainmenu";
-import { Hero } from "@/components/Hero";
+import { Hero } from "@/components/HeaderComponents/Hero";
 export function Header() {
   return (
-    <div className="border-2 flex justify-between px-20 py-4  container mx-auto  max-md:p-4 ">
+    <div className=" flex justify-between px-20 py-4  container mx-auto  max-md:p-4 ">
       <Logo />
       <div className="flex md:hidden ">
         <Menu />
