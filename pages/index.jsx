@@ -17,8 +17,6 @@ export default function Home() {
       <About />
       <Skillicon />
       <Experience />
-      <Upwork />
-      <UpworkL />
       <Work />
     </div>
   );

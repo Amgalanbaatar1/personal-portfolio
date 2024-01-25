@@ -1,23 +1,32 @@
-export function Work() {
+export function Work(props) {
+  const { image } = props;
   return (
-    <div className="container mx-auto flex gap-5">
-      <div className="p-12 flex-1">
-        <img src="/images/Work.png" alt="Work " />
+    <div className="container mx-auto flex gap-5 flex-col  border py px-4 lg:py-24 lg:px-20 ">
+      <div className="flex justify-center ">
+        <Chip label={"work"} />
       </div>
-      <WorkDetail />
+      <p className="flex items-center justify-center">Some of the noteworthy projects I have built:</p>
+      <div className="flex gap-10 border p-12 shadow-xl rounded-xl max-lg:flex-col ">
+        <div className=" flex-1 w-[576px]   max-md:w-[300px]">
+          <img src="/images/work.png" alt="Work " />
+        </div>
+        <WorkDetail />
+      </div>
     </div>
   );
 }
 
 const WorkDetail = () => {
   return (
-    <div className="p-12 flex-1 flex flex-col gap-5  bg-[#F9FAFB] ">
-      <h2>Fiskil</h2>
-      <p>
+    <div className=" flex-1 flex gap-8  bg-white flex-col w-[576px] rounded-xl p-12   max-md:w-[300px] lg:items-center justify-center">
+      <h2 className="text-grey-900 text-xl">Fiskil</h2>
+      <p className="text-gray-600">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
       </p>
       <Chips />
-      <Btn />
+      <a href="">
+        <img src="/images/icon/icon.svg" alt="Share btn" />
+      </a>
     </div>
   );
 };
@@ -25,7 +34,8 @@ const WorkDetail = () => {
 import { Chip } from "../Chip";
 const Chips = () => {
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 flex-wrap items-center justify-cen">
+      <Chip label={"React"} />
       <Chip label={"React"} />
       <Chip label={"React"} />
       <Chip label={"React"} />
@@ -35,21 +45,5 @@ const Chips = () => {
       <Chip label={"React"} />
       <Chip label={"React"} />
     </div>
-  );
-};
-
-const Btn = () => {
-  return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M24 19V25C24 25.5304 23.7893 26.0391 23.4142 26.4142C23.0391 26.7893 22.5304 27 22 27H11C10.4696 27 9.96086 26.7893 9.58579 26.4142C9.21071 26.0391 9 25.5304 9 25V14C9 13.4696 9.21071 12.9609 9.58579 12.5858C9.96086 12.2107 10.4696 12 11 12H17"
-        stroke="#4B5563"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path d="M21 9H27V15" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M16 20L27 9" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    </svg>
   );
 };
