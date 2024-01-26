@@ -1,7 +1,11 @@
+import { Chip } from "../Chip";
 export function About() {
   return (
-    <div className="lg:flex ">
-      <div className=" max-xl:px-4 max-xl:py-8  xl:px-20 py-24 lg:flex container mx-auto   justify-center  gap-[280px]  bg-gray-50">
+    <div className="lg:flex flex justify-between  container mx-auto  max-md:p-4 flex-col dark:bg-[#111827] ">
+      <div className="flex justify-center mb-4 ">
+        <Chip label={"Skills"} />
+      </div>
+      <div className=" max-xl:px-4 max-xl:py-8  xl:px-20 py-24 lg:flex container mx-auto   justify-center  gap-[280px]  bg-gray-50  dark:bg-[#111827]">
         <div className="max-lg:  flex items-center justify-center  ">
           <img style={{ height: 480, width: 400 }} src="/images/Sagar.png" alt="Sagar" />
         </div>

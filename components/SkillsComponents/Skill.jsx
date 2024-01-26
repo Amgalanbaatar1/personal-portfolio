@@ -12,14 +12,14 @@ export function Skill({ title }) {
 export function Skillicon() {
   return (
     <>
-      <div className=" flex justify-between px-20 py-24  container mx-auto  max-md:p-4 flex-col ">
+      <div className=" flex justify-between px-20 py-24  container mx-auto  max-md:p-4 flex-col dark:bg-[#030712] ">
         <div className="flex justify-center mb-4">
           <Chip label={"Skills"} />
         </div>
-        <p className="order-1 mx-auto ">The skills, tools and technologies I am really good at:</p>
+        <p className="order-1 mx-auto dark:text-[#D1D5DB] ">The skills, tools and technologies I am really good at:</p>
         <div
           className="flex flex-wrap gap-8 items-center justify-center max-w-5xl  
-  container mx-auto order-2 p-1"
+  container mx-auto order-2 p-1 dark:text-[#D1D5DB] "
         >
           <Skill title={"Javascript"} />
           <Skill title={"Typescript"} />
