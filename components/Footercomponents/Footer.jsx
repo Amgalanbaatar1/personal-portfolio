@@ -13,13 +13,13 @@ export function Footer() {
           <Chip label={"Get in touch"} />
         </div>
         <p className="mb-12 text-gray-600 dark:text-[#D1D5DB]">What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.</p>
-        <div className="flex text-2xl lg:text-3xl gap-2 items-center dark:text-[#D1D5DB]">
+        <div className="flex text-2xl lg:text-3xl gap-2 items-center dark:text-[#D1D5DB] cursor-grab">
           <FiMail />
           <b className="text-xl mb-4 lg:text-4xl">reachsagarshah@gmail.com</b>
           <MdOutlineContentCopy />
         </div>
 
-        <div className="flex text-2xl lg:text-3xl  gap-2 items-center mb-4 dark:text-[#D1D5DB]">
+        <div className="flex text-2xl lg:text-3xl  gap-2 items-center mb-4 dark:text-[#D1D5DB] cursor-grab">
           <IoCallOutline />
           <b className=" text-xl lg:text-4xl">+91 8980500565</b>
           <MdOutlineContentCopy />

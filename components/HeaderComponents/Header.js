@@ -1,13 +1,14 @@
 import { menuItems } from "@/components/Data/menuItems";
 import { Logo } from "../icons/Logo";
-import { Menu } from "../icons/Menu";
 import { Mainmenu } from "@/components/Data/Mainmenu";
 import { ThemeChanger } from "../ThemeChanger";
+import { Menu } from "../icons/Menu";
+
 export function Header() {
   return (
     <div className=" flex justify-between px-20 py-4  container mx-auto  max-md:p-4 dark:bg-[#030712] ">
       <Logo />
-      <div className="flex md:hidden ">
+      <div className="sm:flex md:hidden ">
         <Menu />
       </div>
       <div className="hidden md:flex list-none gap-5 dark:text-white text-xl ">

@@ -28,7 +28,7 @@ export const Experience = () => {
       <div className="flex justify-center mb-4 ">
         <Chip label={"Experience"} />
       </div>
-      <p className="text-center mb-5">Here is a quick summary of my most recent experiences:</p>
+      <p className="text-center mb-5 dark:text-[#D1D5DB]">Here is a quick summary of my most recent experiences:</p>
       {experienceData.map((experience, index) => (
         <ExperienceCard key={index} {...experience} />
       ))}
@@ -47,7 +47,7 @@ export function ExperienceCard(props) {
         <div className="lg:flex flex-col lg:w-[384px] lg:h-[224px] lg:mx-auto my-auto ">
           <b className="mb-4 dark:text-[#F9FAFB] ">{position}</b>
           {list.map((item, index) => (
-            <li className="dark:text-[#D1D5DB]" key={index}>
+            <li className="dark:text-[#D1D5DB] list-inside list-disc" key={index}>
               {item}
             </li>
           ))}

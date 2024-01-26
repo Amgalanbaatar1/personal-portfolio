@@ -11,7 +11,7 @@ export function About() {
         </div>
 
         <div className="text-gray-600 lg:w-[40%]">
-          <h2 className=" lg:w-[70%] font-sans font-bold text-2xl  text-gray-900">Curious about me? Here you have it:</h2>
+          <h2 className=" lg:w-[70%] font-sans font-bold text-2xl  text-gray-900 dark:text-white">Curious about me? Here you have it:</h2>
           <p className="mb-4 ">
             I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital
             products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
